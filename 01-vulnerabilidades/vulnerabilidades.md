@@ -28,9 +28,9 @@ db.query(`SELECT * FROM users WHERE email = '${email}' AND password = '${passwor
 // Mitigado
 db.query('SELECT * FROM users WHERE email = ? AND password = ?', [email, password])
 ```
-![Petición POST con SQL injection](images/sql-injection-login-request.png) 
+![Petición POST con SQL injection](img/sql-injection-login-request.png) 
 
-![Petición POST con SQL injection](images/sql-injection-login-response.png) 
+![Petición POST con SQL injection](img/sql-injection-login-response.png) 
 
 ### 1.2 Cross-Site Scripting (DOM-based)
 
@@ -42,7 +42,7 @@ db.query('SELECT * FROM users WHERE email = ? AND password = ?', [email, passwor
 
 **Mitigación:** evitar bindings tipo `[innerHTML]` con datos no confiables; usar interpolación de texto plano (`{{ }}`) o sanitizar con DOMPurify antes de insertar HTML.
 
-![DOM-based](images/xss-dom-success.png) 
+![DOM-based](img/xss-dom-success.png) 
 
 ### 1.3 IDOR (Insecure Direct Object Reference)
 
@@ -54,9 +54,9 @@ db.query('SELECT * FROM users WHERE email = ? AND password = ?', [email, passwor
 
 **Mitigación:** validar en servidor que `basket.UserId` coincide con el usuario del token antes de responder.
 
-![Insecure Direct Object Reference](images/idor-basket-response-1.png) 
+![Insecure Direct Object Reference](img/idor-basket-response-1.png) 
 
-![Insecure Direct Object Reference](images/idor-basket-response-2.png) 
+![Insecure Direct Object Reference](img/idor-basket-response-2.png) 
 
 ### 1.4 Control de Acceso Roto
 
@@ -68,9 +68,9 @@ db.query('SELECT * FROM users WHERE email = ? AND password = ?', [email, passwor
 
 **Mitigación:** verificar en servidor que `basketItem.BasketId` pertenece al `Basket` del usuario autenticado antes de autorizar el `DELETE`.
 
-![ Control de Acceso Roto](images/delete-1.png) 
+![ Control de Acceso Roto](img/delete-1.png) 
 
-![ Control de Acceso Roto](images/delete-2.png) 
+![ Control de Acceso Roto](img/delete-2.png) 
 
 ### 1.5 Autenticación Débil
 
@@ -82,7 +82,7 @@ db.query('SELECT * FROM users WHERE email = ? AND password = ?', [email, passwor
 
 **Mitigación:** forzar cambio de contraseña en primer uso, política de complejidad mínima, bloqueo temporal de cuenta y rate limiting tras N intentos fallidos.
 
-![Autenticación Débil](images/weak-auth-login-success.png) 
+![Autenticación Débil](img/weak-auth-login-success.png) 
 
 ## 2. Modelado de Amenazas (DFD + STRIDE)
 
