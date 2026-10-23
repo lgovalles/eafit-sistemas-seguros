@@ -1,0 +1,29 @@
+{
+  "version": "2.6.2",
+  "release_version": "1",
+  "released_at": "2026-10-23",
+  "summary": {
+    "title": "Modelo de Amenazas - Login y Carrito - Juice Shop",
+    "owner": "Luis G Ovalles",
+    "description": "Modelado de amenazas sobre los flujos de autenticación (login) y gestión del carrito de OWASP Juice Shop, aplicación auditada en la sección 1 de este trabajo. Incluye el Diagrama de Flujo de Datos (DFD) y el análisis de amenazas bajo la metodología STRIDE.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "DFD - Login y Carrito",
+        "diagramType": "STRIDE",
+        "placeholder": "Descripción de nuevo diagrama STRIDE",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": "Diagrama de flujo de datos del proceso de login y gestión del carrito"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
