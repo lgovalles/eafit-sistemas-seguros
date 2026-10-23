@@ -258,8 +258,8 @@
           },
           {
             "position": {
-              "x": 100,
-              "y": 350
+              "x": 172.5,
+              "y": 370
             },
             "size": {
               "width": 120,
@@ -382,8 +382,8 @@
           },
           {
             "position": {
-              "x": 800,
-              "y": 220
+              "x": 850,
+              "y": 185
             },
             "size": {
               "width": 120,
@@ -619,8 +619,8 @@
           },
           {
             "position": {
-              "x": 730,
-              "y": 480
+              "x": 642.5,
+              "y": 380
             },
             "size": {
               "width": 170,
@@ -869,58 +869,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Datos del carrito",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Datos del carrito"
-            ],
-            "id": "05ce37e1-c8e5-4e6c-9b7a-4a018538f9ee",
-            "source": {
-              "cell": "c50c6c6c-6540-4193-a3ac-d835e8a44a27",
-              "port": "ad4be426-c342-4512-967f-716d17dd0ad3"
-            },
-            "target": {
-              "cell": "880fff64-6fa8-4411-ae95-dd201f03520e",
-              "port": "be7d0ce5-b63b-4335-b002-b6353bda6925"
-            },
-            "vertices": [
-              {
-                "x": 940,
-                "y": 160
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": " Request con JWT, agregar/ver carrito",
               "description": "",
               "outOfScope": false,
@@ -948,8 +896,64 @@
             },
             "vertices": [
               {
-                "x": 730,
-                "y": 250
+                "x": 690,
+                "y": 260
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Datos del carrito",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Datos del carrito"
+            ],
+            "id": "05ce37e1-c8e5-4e6c-9b7a-4a018538f9ee",
+            "source": {
+              "cell": "c50c6c6c-6540-4193-a3ac-d835e8a44a27",
+              "port": "ad4be426-c342-4512-967f-716d17dd0ad3"
+            },
+            "target": {
+              "cell": "880fff64-6fa8-4411-ae95-dd201f03520e",
+              "port": "6c803d32-f887-4ec2-a722-87b3dd4b0694"
+            },
+            "vertices": [
+              {
+                "x": 940,
+                "y": 160
+              },
+              {
+                "x": 960,
+                "y": 90
               }
             ]
           },
@@ -1167,65 +1171,10 @@
               "cell": "bc6977af-457b-4705-bde6-26af63e7d85a",
               "port": "166a3277-fcdb-4e49-853e-e1aaf748aa1f"
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            },
             "vertices": [
               {
-                "x": 880,
-                "y": 450
+                "x": 940,
+                "y": 340
               }
             ]
           }
