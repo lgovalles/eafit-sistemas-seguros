@@ -921,7 +921,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "consulta",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -935,7 +935,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "consulta"
             ],
             "id": "6ed8973a-1cb0-47ab-9724-4c3d9a444cf0",
             "source": {
