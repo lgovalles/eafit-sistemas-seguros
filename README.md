@@ -4,7 +4,7 @@ Proyecto de recuperación individual del curso **Desarrollo de Sistemas Seguros 
 
 Consiste en un análisis de seguridad end-to-end sobre **OWASP Juice Shop** como aplicación vulnerable de referencia, cubriendo cuatro frentes: explotación de vulnerabilidades, modelado de amenazas, evaluación contra OWASP ASVS, y automatización de análisis estático en un pipeline CI/CD.
 
-**Aplicación auditada:** [OWASP Juice Shop](https://github.com/juice-shop/juice-shop) — fork con el pipeline configurado: **Aplicación auditada:** [OWASP Juice Shop](https://github.com/juice-shop/juice-shop) — fork con el pipeline configurado: [lgovalles/juice-shop](https://github.com/lgovalles/juice-shop)
+**Aplicación auditada:** [OWASP Juice Shop](https://github.com/juice-shop/juice-shop) — fork con el pipeline configurado: [lgovalles/juice-shop](https://github.com/lgovalles/juice-shop)
 
 ## Estructura del repositorio
 
