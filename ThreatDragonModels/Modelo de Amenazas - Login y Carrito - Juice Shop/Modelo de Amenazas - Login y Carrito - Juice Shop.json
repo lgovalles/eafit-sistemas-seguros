@@ -382,8 +382,8 @@
           },
           {
             "position": {
-              "x": 820,
-              "y": 270
+              "x": 800,
+              "y": 220
             },
             "size": {
               "width": 120,
@@ -502,8 +502,8 @@
           },
           {
             "position": {
-              "x": 480,
-              "y": 220
+              "x": 530,
+              "y": 120
             },
             "size": {
               "width": 112.5,
@@ -869,58 +869,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": " Request con JWT, agregar/ver carrito",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              " Request con JWT, agregar/ver carrito"
-            ],
-            "id": "e7d6550e-9dbf-4a5a-a318-70800ff046ed",
-            "source": {
-              "cell": "845e2b7d-20ee-43d2-950b-95475f5d0c03",
-              "port": "7116c3ca-e11e-40df-9aed-4b864c22175f"
-            },
-            "target": {
-              "cell": "c50c6c6c-6540-4193-a3ac-d835e8a44a27",
-              "port": "229e6894-dd54-4df2-b770-c43136a184db"
-            },
-            "vertices": [
-              {
-                "x": 670,
-                "y": 390
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Datos del carrito",
               "description": "",
               "outOfScope": false,
@@ -950,6 +898,58 @@
               {
                 "x": 940,
                 "y": 160
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": " Request con JWT, agregar/ver carrito",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              " Request con JWT, agregar/ver carrito"
+            ],
+            "id": "e7d6550e-9dbf-4a5a-a318-70800ff046ed",
+            "source": {
+              "cell": "845e2b7d-20ee-43d2-950b-95475f5d0c03",
+              "port": "7116c3ca-e11e-40df-9aed-4b864c22175f"
+            },
+            "target": {
+              "cell": "c50c6c6c-6540-4193-a3ac-d835e8a44a27",
+              "port": "8a50caef-5154-4488-8780-10457df7ecfd"
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": 250
               }
             ]
           },
@@ -1113,12 +1113,12 @@
             },
             "target": {
               "cell": "845e2b7d-20ee-43d2-950b-95475f5d0c03",
-              "port": "6c803d32-f887-4ec2-a722-87b3dd4b0694"
+              "port": "be7d0ce5-b63b-4335-b002-b6353bda6925"
             },
             "vertices": [
               {
-                "x": 370,
-                "y": 310
+                "x": 400,
+                "y": 190
               }
             ]
           },
@@ -1167,14 +1167,13 @@
               "cell": "bc6977af-457b-4705-bde6-26af63e7d85a",
               "port": "166a3277-fcdb-4e49-853e-e1aaf748aa1f"
             },
-            "vertices": [
-              {
-                "x": 880,
-                "y": 450
-              }
-            ],
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -1222,7 +1221,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 880,
+                "y": 450
+              }
+            ]
           }
         ],
         "description": "Diagrama de flujo de datos del proceso de login y gestión del carrito"
