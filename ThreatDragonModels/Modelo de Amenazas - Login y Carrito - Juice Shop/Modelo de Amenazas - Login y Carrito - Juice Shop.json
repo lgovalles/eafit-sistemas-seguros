@@ -21,6 +21,77 @@
         "cells": [
           {
             "position": {
+              "x": 19.999999999999545,
+              "y": -5
+            },
+            "size": {
+              "width": 930,
+              "height": 130
+            },
+            "attrs": {
+              "label": {
+                "text": "Internet / Cliente-Servidor"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "a6ffbdff-bbbd-4b2b-90ab-3c7f171e2ea4",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Internet / Cliente-Servidor",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "e7d6550e-9dbf-4a5a-a318-70800ff046ed",
+                "05ce37e1-c8e5-4e6c-9b7a-4a018538f9ee",
+                "bedc5871-8b88-40af-b32a-e4f6f6dae125",
+                "8f49554f-898a-4d2b-a38c-102d1c0a2944"
+              ],
+              "containedElements": [
+                "cdd6a84c-5148-477c-8620-f53f3302ec42",
+                "845e2b7d-20ee-43d2-950b-95475f5d0c03",
+                "880fff64-6fa8-4411-ae95-dd201f03520e"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 17.99999999999926,
+              "y": 400.0000000000022
+            },
+            "size": {
+              "width": 930,
+              "height": 180
+            },
+            "attrs": {
+              "label": {
+                "text": "Aplicación / Base de Datos"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "525c3050-2188-49fe-a9bf-46721c1c9d6d",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Aplicación / Base de Datos",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "133567bd-3a14-4271-be23-55823fbeec8d",
+                "c09820d5-601c-428d-9949-c1f76a7c0c88"
+              ],
+              "containedElements": [
+                "0eb7d7a5-a5b9-4d9f-8e30-8d3ea581a4f7",
+                "bc6977af-457b-4705-bde6-26af63e7d85a"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 60,
               "y": 30
             },
@@ -258,8 +329,8 @@
           },
           {
             "position": {
-              "x": 120,
-              "y": 430
+              "x": 110,
+              "y": 450
             },
             "size": {
               "width": 180,
@@ -619,8 +690,8 @@
           },
           {
             "position": {
-              "x": 698.75,
-              "y": 430
+              "x": 700,
+              "y": 440
             },
             "size": {
               "width": 170,
@@ -772,7 +843,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "a6ffbdff-bbbd-4b2b-90ab-3c7f171e2ea4"
+              ]
             },
             "labels": [
               " Request con JWT, agregar/ver carrito"
@@ -824,7 +897,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "a6ffbdff-bbbd-4b2b-90ab-3c7f171e2ea4"
+              ]
             },
             "labels": [
               "Datos del carrito"
@@ -865,7 +940,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Consulta",
+              "name": "credenciales login",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -876,24 +951,26 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "a6ffbdff-bbbd-4b2b-90ab-3c7f171e2ea4"
+              ]
             },
             "labels": [
-              "Consulta"
+              "credenciales login"
             ],
-            "id": "133567bd-3a14-4271-be23-55823fbeec8d",
+            "id": "bedc5871-8b88-40af-b32a-e4f6f6dae125",
             "source": {
-              "cell": "35ed55fa-ef60-4f9a-8a2e-aa4aaf321d47",
-              "port": "229e6894-dd54-4df2-b770-c43136a184db"
+              "cell": "cdd6a84c-5148-477c-8620-f53f3302ec42",
+              "port": "6c803d32-f887-4ec2-a722-87b3dd4b0694"
             },
             "target": {
-              "cell": "0eb7d7a5-a5b9-4d9f-8e30-8d3ea581a4f7",
-              "port": "166a3277-fcdb-4e49-853e-e1aaf748aa1f"
+              "cell": "35ed55fa-ef60-4f9a-8a2e-aa4aaf321d47",
+              "port": "ad4be426-c342-4512-967f-716d17dd0ad3"
             },
             "vertices": [
               {
-                "x": 230,
-                "y": 360
+                "x": 90,
+                "y": 150
               }
             ]
           },
@@ -917,7 +994,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "credenciales login",
+              "name": "Consulta",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -928,24 +1005,26 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "525c3050-2188-49fe-a9bf-46721c1c9d6d"
+              ]
             },
             "labels": [
-              "credenciales login"
+              "Consulta"
             ],
-            "id": "bedc5871-8b88-40af-b32a-e4f6f6dae125",
+            "id": "133567bd-3a14-4271-be23-55823fbeec8d",
             "source": {
-              "cell": "cdd6a84c-5148-477c-8620-f53f3302ec42",
-              "port": "6c803d32-f887-4ec2-a722-87b3dd4b0694"
+              "cell": "35ed55fa-ef60-4f9a-8a2e-aa4aaf321d47",
+              "port": "229e6894-dd54-4df2-b770-c43136a184db"
             },
             "target": {
-              "cell": "35ed55fa-ef60-4f9a-8a2e-aa4aaf321d47",
-              "port": "ad4be426-c342-4512-967f-716d17dd0ad3"
+              "cell": "0eb7d7a5-a5b9-4d9f-8e30-8d3ea581a4f7",
+              "port": "08b8813c-fc7d-4389-b582-4dca15fa25b6"
             },
             "vertices": [
               {
-                "x": 90,
-                "y": 150
+                "x": 60,
+                "y": 350
               }
             ]
           },
@@ -1097,7 +1176,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "a6ffbdff-bbbd-4b2b-90ab-3c7f171e2ea4"
+              ]
             },
             "labels": [
               " Token JWT"
@@ -1113,8 +1194,8 @@
             },
             "vertices": [
               {
-                "x": 390,
-                "y": 140
+                "x": 250,
+                "y": 180
               }
             ]
           },
@@ -1149,7 +1230,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "525c3050-2188-49fe-a9bf-46721c1c9d6d"
+              ]
             },
             "labels": [
               "Consulta/escritura"
@@ -1169,34 +1252,6 @@
                 "y": 330
               }
             ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 17,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "b5af8c12-9c08-42f2-9c63-e688b460cfd8",
-            "source": {
-              "x": 1130,
-              "y": 120
-            },
-            "target": {
-              "cell": "35ed55fa-ef60-4f9a-8a2e-aa4aaf321d47",
-              "port": "ad4be426-c342-4512-967f-716d17dd0ad3"
-            }
           }
         ],
         "description": "Diagrama de flujo de datos del proceso de login y gestión del carrito"
