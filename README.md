@@ -8,10 +8,12 @@ Consiste en un análisis de seguridad end-to-end sobre **OWASP Juice Shop** como
 
 ## Estructura del repositorio
 
+## Estructura del repositorio
+
 | Carpeta | Contenido | Valor |
 |---|---|---|
-| `01-vulnerabilidades/` | Explotación documentada de 5 vulnerabilidades críticas del OWASP Top 10 2025 (capturas, peticiones HTTP interceptadas, mitigación en código) | 25% |
-| `02-modelado-amenazas/` | Diagrama de Flujo de Datos (DFD) y modelado de amenazas bajo metodología STRIDE, con archivo de Threat Dragon | 25% |
+| [`01-vulnerabilidades/`](01-vulnerabilidades/vulnerabilidades.md) | Explotación documentada de 5 vulnerabilidades críticas del OWASP Top 10 2025 (capturas, peticiones HTTP interceptadas, mitigación en código) | 25% |
+| [`02-modelado-amenazas/`](02-modelado-amenazas/02-modelado-amenazas.md) | DFD + STRIDE. Modelo: [Threat Dragon JSON](02-modelado-amenazas/ThreatDragonModels/Modelo%20de%20Amenazas%20-%20Login%20y%20Carrito%20-%20Juice%20Shop/Modelo%20de%20Amenazas%20-%20Login%20y%20Carrito%20-%20Juice%20Shop.json) | 25% |
 | `03-asvs/` | Matriz de cumplimiento frente a dos capítulos de OWASP ASVS, Nivel 1 | 25% |
 | `04-cicd-sast/` | Documentación del pipeline de GitHub Actions con análisis SAST (código en el fork de Juice Shop) | 25% |
 
