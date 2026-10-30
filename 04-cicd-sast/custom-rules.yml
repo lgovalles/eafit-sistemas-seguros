@@ -1,0 +1,32 @@
+rules:
+  - id: raw-sql-template-literal-concat
+    languages: [typescript]
+    severity: ERROR
+    message: >
+      Consulta SQL construida con un template literal que interpola variables directamente
+      dentro de `sequelize.query(...)`. Esto permite inyección SQL si la variable interpolada
+      proviene de la entrada del usuario (ej. req.body, req.query). Usar consultas parametrizadas
+      (placeholders `?` / `:name` + `replacements`) en su lugar.
+    metadata:
+      category: security
+      cwe: "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"
+      owasp: "A03:2021 - Injection"
+      references:
+        - https://owasp.org/Top10/A03_2021-Injection/
+      confidence: HIGH
+    pattern: $MODELS.sequelize.query(`...${$X}...`, ...)
+
+  - id: innerhtml-assignment-unsanitized
+    languages: [typescript]
+    severity: WARNING
+    message: >
+      Asignación directa a `innerHTML` con datos que pueden no estar sanitizados. Puede permitir
+      XSS DOM-based si el valor proviene de entrada del usuario (ej. parámetros de búsqueda, reseñas).
+    metadata:
+      category: security
+      cwe: "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+      owasp: "A03:2021 - Injection"
+      confidence: MEDIUM
+    pattern-either:
+      - pattern: $EL.innerHTML = $VAL
+      - pattern: $EL.nativeElement.innerHTML = $VAL
