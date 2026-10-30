@@ -73,3 +73,7 @@ El ruleset comunitario también marcó `routes/redirect.ts:18` (`express-open-re
 ### 4.3 Conclusión
 
 El pipeline, con las reglas genéricas por sí solas, **no habría bloqueado** el commit que introdujo la inyección SQL explotada en la sección 1.1: las reglas comunitarias no generalizan al patrón específico de este proyecto (`sequelize.query` + template literal). Al añadir una regla propia calibrada contra el hallazgo real, el pipeline sí detecta y **bloquea el merge** (severidad `ERROR`) tanto del login vulnerable como de una segunda inyección SQL no identificada previamente en el buscador de productos. Esto demuestra el valor de combinar rulesets genéricos con reglas específicas del dominio/aplicación derivadas de los propios hallazgos de pentesting, y refuerza la recomendación de la sección 1.1 (consultas parametrizadas) con un control preventivo automatizado en el pipeline de CI/CD, antes de que el código vulnerable llegue a producción.
+
+![ Pieline CI CD](img/workflows1.png) 
+
+![ GitHug Actions](img/workflows.png) 
