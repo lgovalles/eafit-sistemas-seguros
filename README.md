@@ -15,7 +15,7 @@ Consiste en un análisis de seguridad end-to-end sobre **OWASP Juice Shop** como
 | [`01-vulnerabilidades/`](01-vulnerabilidades/vulnerabilidades.md) | Explotación documentada de 5 vulnerabilidades críticas del OWASP Top 10 2025 (capturas, peticiones HTTP interceptadas, mitigación en código) | 25% |
 | [`02-modelado-amenazas/`](02-modelado-amenazas/02-modelado-amenazas.md) | DFD + STRIDE. Modelo: [Threat Dragon JSON](02-modelado-amenazas/ThreatDragonModels/Modelo%20de%20Amenazas%20-%20Login%20y%20Carrito%20-%20Juice%20Shop/Modelo%20de%20Amenazas%20-%20Login%20y%20Carrito%20-%20Juice%20Shop.json) | 25% |
 | [`03-asvs/`](03-asvs/asvs-matriz.md) | Matriz de cumplimiento frente a dos capítulos de OWASP ASVS, Nivel 1 | 25% |
-| [`04-cicd-sast/`](04-cicd-sast/cicd-sast.md) | Documentación del pipeline de GitHub Actions con análisis SAST — workflow: [`sast.yml`](https://github.com/lgovalles/juice-shop/blob/main/.github/workflows/sast.yml), reglas: [`custom-rules.yml`](https://github.com/lgovalles/juice-shop/blob/main/.semgrep/custom-rules.yml) (código en el fork de Juice Shop) | 25% |
+| [`04-cicd-sast/`](04-cicd-sast/04-cicd-sast.md) | Documentación del pipeline de GitHub Actions con análisis SAST — workflow: [`sast.yml`](https://github.com/lgovalles/juice-shop/blob/main/.github/workflows/sast.yml), reglas: [`custom-rules.yml`](https://github.com/lgovalles/juice-shop/blob/main/.semgrep/custom-rules.yml) (código en el fork de Juice Shop) | 25% |
 
 ## Vulnerabilidades analizadas
 
