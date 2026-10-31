@@ -169,8 +169,6 @@ La combinación de rulesets comunitarios y reglas específicas de la aplicación
 
 En la ejecución documentada de GitHub Actions, Semgrep identificó **11 hallazgos bloqueantes**, finalizó con **código 1** y provocó que la etapa **`Simulated Deployment`** quedara en estado **`Skipped`**. Esto constituye evidencia reproducible de que un fallo del análisis SAST impide continuar hacia una etapa dependiente de despliegue simulado.
 
-**Estado del hito 4:** implementación y prueba del bloqueo del job y del despliegue simulado **satisfactorias**. Queda fuera del alcance demostrado el bloqueo de un despliegue real o de un merge mediante políticas de protección de ramas.
-
 
 ![ Pieline CI CD](img/workflows1.png) 
 
