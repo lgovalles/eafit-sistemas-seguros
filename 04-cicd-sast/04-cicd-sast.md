@@ -77,3 +77,5 @@ El pipeline, con las reglas genéricas por sí solas, **no habría bloqueado** e
 ![ Pieline CI CD](img/workflows1.png) 
 
 ![ GitHug Actions](img/workflows.png) 
+
+![ GitHug Actions](img/workflows3.png) 
