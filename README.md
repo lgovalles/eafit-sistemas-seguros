@@ -6,7 +6,6 @@ Consiste en un análisis de seguridad end-to-end sobre **OWASP Juice Shop** como
 
 **Aplicación auditada:** [OWASP Juice Shop](https://github.com/juice-shop/juice-shop) — fork con el pipeline configurado: [lgovalles/juice-shop](https://github.com/lgovalles/juice-shop)
 
-## Estructura del repositorio
 
 ## Estructura del repositorio
 
