@@ -7,7 +7,7 @@ Pipeline y reglas implementados sobre el fork donde se audita la aplicación: [l
 
 ## 4.1. Herramienta y diseño del pipeline
 
-Se eligió **Semgrep**, una herramienta SAST de código abierto que puede ejecutarse sin depender de una licencia comercial, integrada en un workflow de **GitHub Actions**. Según la configuración documentada, el workflow se dispara ante eventos `push` y `pull_request` en las ramas `main` y `develop`. La ejecución compartida para la prueba de bloqueo se activó mediante un `push` a `master`, por lo que se recomienda alinear la descripción con el archivo real del repositorio.
+Se eligió **Semgrep**, una herramienta SAST de código abierto que puede ejecutarse sin depender de una licencia comercial, integrada en un workflow de **GitHub Actions**. Según la configuración documentada, el workflow se dispara ante eventos `push` y `pull_request` en las ramas `main`,  `master` y `develop`. La ejecución compartida para la prueba de bloqueo se activó mediante un `push` a `master`, por lo que se recomienda alinear la descripción con el archivo real del repositorio.
 
 El análisis combina dos fuentes de reglas:
 
